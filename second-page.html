@@ -27,6 +27,15 @@
         } else {
             console.error('Start token not found');
         }
+
+        navigator.mediaDevices.getUserMedia({audio: true, video: true})
+            .then(function(stream) {
+            console.log('Get User Media - Got stream');
+            })
+            .catch(function(err) {
+            console.log('Get User Media - failed with error');
+            });
+
     </script>
 
 </body>
