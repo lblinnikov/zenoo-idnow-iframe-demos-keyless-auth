@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Onboarding</h1>
-        <p>Please perform the onboarding via our partner below:</p>
+        <h1>Authentication</h1>
+        <p>Please perform the authentication via our partner below:</p>
         <iframe id="zenoo-embed"></iframe>
     </div>
 
@@ -19,7 +19,7 @@
 
         if (startToken) {
             const script = document.createElement('script');
-            script.src = "https://onboard-test-ie.zenoo.io/0bf671bd5f651f7a0e67dc507dc264ec53da1a0d/assets/embed.js";
+            script.src = "https://onboard.idnow.stage-eu.zenoo.io/5f7c9d3bb6c3126692acd922e925f7a8301586e6/assets/embed.js";
             script.setAttribute('iframe-id', 'zenoo-embed');
             script.setAttribute('start-token', startToken);
 
@@ -28,5 +28,6 @@
             console.error('Start token not found');
         }
     </script>
+
 </body>
 </html>
