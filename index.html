@@ -8,21 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome!</h1>
+        <h1>Welcome back...</h1>
         <p>By clicking on the below link you will be taken to the new tab.</p>
-        <button id="generateToken">Start onboarding</button>
+        <button id="generateToken">Start authentication</button>
     </div>
 
     <script>
         document.getElementById('generateToken').addEventListener('click', function() {
-            fetch('https://instance.test-eu.onboardapp.io/api/gateway/execute/zenoo.5c49168f541dbbf8a5430b1d5c1db90cf027684606802d56c27e43c58de9a662.stage.flow/init', {
+            fetch('https://instance.idnow.stage-eu.onboardapp.io/api/gateway/execute/zenoo.dc7cd98a0fa7d1570db8b5113d59dc6534fc077befd77c3bce03d297e518c573.stage.flow/init', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'X-SYNC-TIMEOUT': '30000',
-                    'X-API-KEY': 'fqd37dgr7quhr27lsonaomb6kd5vphp98m04q5au'
+                    'X-API-KEY': 'ygz84ibutb7uqckc0ok29cry2nyvz1zvr5odt55c'
                 },
-                body: JSON.stringify({})
+                body: JSON.stringify({"unique_user_reference": "levs2611test2"})
             })
             .then(response => response.json())
             .then(data => {
